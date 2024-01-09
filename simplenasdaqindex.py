@@ -13,7 +13,7 @@ date = '20231229'
 current_price_volume_traded = pd.read_csv(f"NASDAQ_{date}.csv")
 cpdf = current_price_volume_traded[['Symbol', 'Close', 'Volume']]
 cpdf = cpdf.rename(columns={'Symbol': 'Ticker'})
-print(cpdf)
+
 #load target data from research roundup files
 targetdf = pd.DataFrame()
 
